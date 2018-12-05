@@ -14,12 +14,13 @@ let kScreenWidth    = UIScreen.main.bounds.width
 let kScreenHeight   = UIScreen.main.bounds.height
 class LoginTableViewController: UITableViewController, UITextFieldDelegate, GIDSignInUIDelegate, GIDSignInDelegate {
 
-    @IBOutlet weak var viewUsernameTxtFld           : UIView!
-    @IBOutlet weak var textFieldUsername            : UITextField!
-    @IBOutlet weak var textFieldPassword            : UITextField!
-    @IBOutlet weak var viewPasswordTxtFld           : UIView!
-    @IBOutlet weak var buttonSignin                 : UIButton!
-    @IBOutlet var forgetPassWordView                : ForgetPassWordView!
+    @IBOutlet weak var viewUsernameTxtFld: UIView!
+    @IBOutlet weak var textFieldUsername: UITextField!
+    @IBOutlet weak var textFieldPassword: UITextField!
+    @IBOutlet weak var viewPasswordTxtFld: UIView!
+    @IBOutlet weak var buttonSignin: UIButton!
+    @IBOutlet var forgetPassWordView: ForgetPassWordView!
+
     var deviceToken                                 : String!
     var appDelegate                                 : AppDelegate!
     var activeTextfiled                             : UITextField!
@@ -117,7 +118,7 @@ class LoginTableViewController: UITableViewController, UITextFieldDelegate, GIDS
         
     }
     @IBAction func buttonSignUpAction(_ sender: UIButton) {
-        let registrationVC = self.storyboard?.instantiateViewController(withIdentifier: "RegistrationTableViewController") as! RegistrationTableViewController
+        let registrationVC = self.storyboard?.instantiateViewController(withIdentifier: "RegistrationViewController") as! RegistrationViewController
         self.navigationController?.pushViewController(registrationVC, animated: true)
     }
     @IBAction func buttonGoogleSignIn(_ sender: UIButton) {

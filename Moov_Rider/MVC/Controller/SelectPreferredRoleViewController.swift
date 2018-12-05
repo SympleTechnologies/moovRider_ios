@@ -1,22 +1,20 @@
 //
-//  SelectPreferredInstitutionViewController.swift
+//  SelectPreferredRoleViewController.swift
 //  Moov_Rider
 //
-//  Created by Visakh on 17/07/18.
+//  Created by Henry Chukwu on 12/5/18.
 //  Copyright © 2018 Visakh. All rights reserved.
 //
 
 import UIKit
-import GooglePlaces
 
+class SelectPreferredRoleViewController: UIViewController, NIDropDownDelegate {
 
-class SelectPreferredInstitutionViewController: UIViewController, NIDropDownDelegate {
-    
     @IBOutlet weak var continueButton: UIButton!
-    @IBOutlet weak var textFieldUniv: UITextField!
+    @IBOutlet weak var textFieldRole: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var topView: BorderView!
-    
+
     var firstName: String!
     var surName: String!
     var emailID: String!
@@ -30,10 +28,11 @@ class SelectPreferredInstitutionViewController: UIViewController, NIDropDownDele
     var arrayUserRole: [UserType]!
     var arrayCollegeNameList: NSMutableArray!
     var arrayDropDwnUserRole: NSMutableArray!
-    
+
     var isDropDownOpen = Bool()
     var nidropDown = NIDropDown()
     var collegeID: Int!
+    var userRoleID: Int!
 
     var arrayPlaces = NSMutableArray()
     var arrayPlacesName = NSMutableArray()
@@ -42,95 +41,90 @@ class SelectPreferredInstitutionViewController: UIViewController, NIDropDownDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         continueButton.layer.cornerRadius = 25.0
         continueButton.layer.masksToBounds = true
         signUpButton.layer.cornerRadius = 25.0
         signUpButton.layer.masksToBounds = true
         topView.shouldDrawBottomBorder = true
         nidropDown.delegate = self
-        self.listColleges()
+        listUserRole()
     }
-    
-    //MARK: Api List Colleges
-    func listColleges() {
+
+    //MARK: Api List UserRole
+    func listUserRole() {
         let hud = GenericFunctions.showJHud(target: self)
-        AlamofireSubclass.parseLinkUsingGetMethod("auth/select_college") { (success, response, error) in
+        AlamofireSubclass.parseLinkUsingGetMethod("auth/select_user_type") { (success, response, error) in
             hud.hide()
             if success == true {
-                self.arrayCollegeList = [College]()
-                self.arrayCollegeNameList = NSMutableArray()
-                if response!["message"] as! String == "College List" {
+                self.arrayUserRole = [UserType]()
+                self.arrayDropDwnUserRole = NSMutableArray()
+                if response!["message"] as! String == "User type List" {
                     let dataDict = response!["data"] as! NSDictionary
                     for dict in dataDict["details"] as! NSArray {
-                        let objClg = College().initWith((dict as! NSDictionary))
-                        self.arrayCollegeList.append(objClg)
-                        self.arrayCollegeNameList.add(objClg.name)
+                        let objUser = UserType().initWith((dict as! NSDictionary))
+                        self.arrayUserRole.append(objUser)
+                        self.arrayDropDwnUserRole.add(objUser.role)
                     }
                 }else {
                     GenericFunctions.showAlertView(targetVC: self, title: "Error", message: "Please try again")
                 }
-                
             }else{
                 GenericFunctions.showAlertView(targetVC: self, title: "Error", message: (error?.localizedDescription)!)
             }
         }
     }
-    
-    //MARK:- Button Actions
-    @IBAction func SelectPreferredInstitutionDropDownAction(_ sender: UIButton) {
+
+    @IBAction func buttonSelectRoleAction(_ sender: UIButton) {
+        sender.isSelected   = !sender.isSelected
+//        selectUniversity = false
         if isDropDownOpen == true {
             nidropDown.hide(sender)
+//            if previousDropBtn != sender {
+//                previousDropBtn.isSelected = !previousDropBtn.isSelected
+//            }
             isDropDownOpen = false
         }
         if sender.isSelected == true {
-            nidropDown.show(sender,120.0, arrayCollegeNameList as! [Any], nil, "down")
+            nidropDown.show(sender,120.0, arrayDropDwnUserRole as! [Any], nil, "down")
             //(sender, 120.0 , , nil, "down")
             isDropDownOpen = true
-        } else {
+        }else {
             nidropDown.hide(sender)
         }
+//        previousDropBtn = sender
+
     }
 
     @IBAction func buttonNextAction(_ sender: UIButton) {
-        
-        if textFieldUniv.text?.isEmpty == false{
-                let selectPreferredRoleVC = self.storyboard?.instantiateViewController(withIdentifier: "SelectPreferredRoleViewController") as! SelectPreferredRoleViewController
-            selectPreferredRoleVC.firstName = self.firstName!
-                selectPreferredRoleVC.surName = self.surName!
-                selectPreferredRoleVC.emailID = self.emailID!
-                selectPreferredRoleVC.password = self.password!
-                selectPreferredRoleVC.collegeID = self.collegeID!
-                selectPreferredRoleVC.authMode = self.authMode!
-                selectPreferredRoleVC.authProvider = self.authProvider!
-                selectPreferredRoleVC.imageData = self.imageData!
-                selectPreferredRoleVC.authUID = self.authUID!
-                selectPreferredRoleVC.imageUrl = self.imageUrl!
-                self.navigationController?.pushViewController(selectPreferredRoleVC, animated: true)
+
+        if textFieldRole.text?.isEmpty == false{
+            let enterPhoneNumberVC = self.storyboard?.instantiateViewController(withIdentifier: "EnterMobileNumberViewController") as! EnterMobileNumberViewController
+            enterPhoneNumberVC.firstname = self.firstName!
+            enterPhoneNumberVC.surName = self.surName!
+            enterPhoneNumberVC.emailID = self.emailID!
+            enterPhoneNumberVC.password = self.password!
+            enterPhoneNumberVC.collegeID = self.collegeID!
+            enterPhoneNumberVC.userRoleID = self.userRoleID!
+            enterPhoneNumberVC.authMode = self.authMode!
+            enterPhoneNumberVC.authProvider = self.authProvider!
+            enterPhoneNumberVC.imageData = self.imageData!
+            enterPhoneNumberVC.authUID = self.authUID!
+            enterPhoneNumberVC.imageUrl = self.imageUrl!
+            self.navigationController?.pushViewController(enterPhoneNumberVC, animated: true)
 
         } else {
             GenericFunctions.showAlertView(targetVC: self, title: "Message", message: "Please select university")
         }
-        
-       
+
+
     }
-    
-    //MARK:- Dropdown delegate
+
     func niDropDownDelegateMethod(_ sender: UIButton!, selectedIndex index: Int32) {
-        collegeID = arrayCollegeList[Int(index)].id
-        self.textFieldUniv.text = (arrayCollegeNameList[Int(index)] as! String)
+        userRoleID = arrayUserRole[Int(index)].id
+        self.textFieldRole.text = (arrayDropDwnUserRole[Int(index)] as! String)
         nidropDown.hide(sender)
         nidropDown.removeFromSuperview()
     }
 
-
-    @objc func sideMenuAction() {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    
-    
 }
