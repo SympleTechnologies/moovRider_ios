@@ -105,6 +105,7 @@
 		477B02D321B7FB8200D68225 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B02D221B7FB8200D68225 /* RoundedView.swift */; };
 		477B02D521B8021100D68225 /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B02D421B8021100D68225 /* BorderView.swift */; };
 		477B02D721B8661B00D68225 /* SelectPreferredRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B02D621B8661B00D68225 /* SelectPreferredRoleViewController.swift */; };
+		477B02D921B94AEE00D68225 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B02D821B94AEE00D68225 /* LandingPageViewController.swift */; };
 		6E090C7521B536340084B246 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E090C7421B536340084B246 /* CosmosDistrib.swift */; };
 		6E67306A21B531E700F788FF /* PreviousRidesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67306921B531E700F788FF /* PreviousRidesTableViewCell.swift */; };
 		6E67306C21B5323F00F788FF /* PaymentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67306B21B5323F00F788FF /* PaymentListTableViewCell.swift */; };
@@ -262,6 +263,7 @@
 		477B02D221B7FB8200D68225 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		477B02D421B8021100D68225 /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
 		477B02D621B8661B00D68225 /* SelectPreferredRoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPreferredRoleViewController.swift; sourceTree = "<group>"; };
+		477B02D821B94AEE00D68225 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		5869ADF509256E188040B675 /* Pods-Moov_Rider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moov_Rider.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moov_Rider/Pods-Moov_Rider.release.xcconfig"; sourceTree = "<group>"; };
 		6E090C7421B536340084B246 /* CosmosDistrib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
 		6E67306921B531E700F788FF /* PreviousRidesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRidesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -342,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				2F23E29120FDCD1900487BA5 /* LoginTableViewController.swift */,
+				477B02D821B94AEE00D68225 /* LandingPageViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -888,6 +891,7 @@
 				2FCA608A20FF44C900D9BA65 /* SelectSeatsViewController.swift in Sources */,
 				477B02CE21B7F9E600D68225 /* SPGooglePlacesAutocompleteQuery.m in Sources */,
 				477B02D021B7F9E600D68225 /* SPGooglePlacesPlaceDetailQuery.m in Sources */,
+				477B02D921B94AEE00D68225 /* LandingPageViewController.swift in Sources */,
 				2F9FC3A82109E5D7002B75AC /* UnpaidPaymentViewController.swift in Sources */,
 				2F37222D21006B100002ADBF /* PaymentListViewController.swift in Sources */,
 				2FF2A7CD213D8FAD00011C81 /* FutureBookingViewController.swift in Sources */,
