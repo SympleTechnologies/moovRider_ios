@@ -19,6 +19,10 @@ class LandingPageViewController: UIViewController, GIDSignInUIDelegate, GIDSignI
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        signinButton.layer.cornerRadius = 25.0
+        signinButton.layer.masksToBounds = true
+        createNewAccountButton.layer.cornerRadius = 25.0
+        createNewAccountButton.layer.masksToBounds = true
         appDelegate = UIApplication.shared.delegate as! AppDelegate
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
@@ -35,13 +39,14 @@ class LandingPageViewController: UIViewController, GIDSignInUIDelegate, GIDSignI
     }
 
     @IBAction func signinButtonPressed(_ sender: Any) {
-        let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        self.navigationController?.pushViewController(loginVC, animated: true)
+        let loginRootVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginRootViewController") as! LoginRootViewController
+        self.navigationController?.pushViewController(loginRootVC, animated: true)
     }
 
     @IBAction func createAccountButtonPressed(_ sender: Any) {
-        let registrationVC = self.storyboard?.instantiateViewController(withIdentifier: "RegistrationViewController") as! RegistrationViewController
-        self.navigationController?.pushViewController(registrationVC, animated: true)
+        let loginRootVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginRootViewController") as! LoginRootViewController
+        loginRootVC.selectedPageIndex = 1
+        self.navigationController?.pushViewController(loginRootVC, animated: true)
     }
 
     @IBAction func buttonGoogleSignIn(_ sender: UIButton) {

@@ -81,13 +81,10 @@ class SelectPreferredInstitutionViewController: UIViewController, NIDropDownDele
         if isDropDownOpen == true {
             nidropDown.hide(sender)
             isDropDownOpen = false
-        }
-        if sender.isSelected == true {
+        } else {
             nidropDown.show(sender,120.0, arrayCollegeNameList as! [Any], nil, "down")
             //(sender, 120.0 , , nil, "down")
             isDropDownOpen = true
-        } else {
-            nidropDown.hide(sender)
         }
     }
 

@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-
-class RegistrationViewController: UIViewController, UITextFieldDelegate {
+class RegistrationViewController: UIViewController, UITextFieldDelegate, IndicatorInfoProvider {
     
     @IBOutlet weak var topView: BorderView!
     @IBOutlet weak var textFieldFirstName: UITextField!
@@ -34,6 +34,12 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         self.view.addGestureRecognizer(tapGesture)
         self.addDoneButtonOnKeyboard()
     }
+
+    // MARK: - IndicatorInfoProvider
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "Sign up")
+    }
+
 
     func addDoneButtonOnKeyboard() {
         let doneToolbar: UIToolbar  = UIToolbar(frame: CGRect(x:0, y:0, width:320, height:50))

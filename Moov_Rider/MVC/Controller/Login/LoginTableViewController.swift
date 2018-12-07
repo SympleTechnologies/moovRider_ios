@@ -9,10 +9,11 @@ import UIKit
 import GoogleSignIn
 import SDWebImage
 import FBSDKLoginKit
+import XLPagerTabStrip
 
 let kScreenWidth    = UIScreen.main.bounds.width
 let kScreenHeight   = UIScreen.main.bounds.height
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate, IndicatorInfoProvider {
 
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
@@ -39,6 +40,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(keyboardHide))
         self.view.addGestureRecognizer(tapGesture)
         
+    }
+
+    // MARK: - IndicatorInfoProvider
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "Sign in")
     }
 
     //MARK Button Actions
@@ -228,6 +234,7 @@ extension UIView {
 }
 //MARK:- forgetPassWordDelegate
 extension LoginViewController : forgetPassWordDelegate {
+
     func didPasswordSubmitPressed(_ values: NSDictionary) {
         if values["email"] as! NSString != ""{
             forgetPassWord(email: (values["email"] as! NSString) as String)

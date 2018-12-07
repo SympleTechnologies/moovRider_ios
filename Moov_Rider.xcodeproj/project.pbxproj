@@ -95,6 +95,7 @@
 		2FFBC211210634B000A077D9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFBC214210634B000A077D9 /* FBSDKCoreKit.framework */; };
 		2FFBC212210634B000A077D9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFBC215210634B000A077D9 /* FBSDKLoginKit.framework */; };
 		37794D8F1624A79E15BDFEA4 /* Pods_Moov_Rider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3A43A1B53B6C877651E666 /* Pods_Moov_Rider.framework */; };
+		47738C3A21B9E232005834FD /* LoginRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47738C3921B9E232005834FD /* LoginRootViewController.swift */; };
 		477B029A21B57A8800D68225 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B029321B57A8700D68225 /* MFSideMenuContainerViewController.m */; };
 		477B029B21B57A8800D68225 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B029421B57A8700D68225 /* UIViewController+MFSideMenuAdditions.m */; };
 		477B029C21B57A8800D68225 /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B029921B57A8700D68225 /* MFSideMenuShadow.m */; };
@@ -244,6 +245,7 @@
 		2FFBC213210634B000A077D9 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFBC214210634B000A077D9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFBC215210634B000A077D9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47738C3921B9E232005834FD /* LoginRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRootViewController.swift; sourceTree = "<group>"; };
 		477B029121B577DD00D68225 /* Moov_Rider-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Moov_Rider-Bridging-Header.h"; path = "Moov_Rider/Moov_Rider-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		477B029321B57A8700D68225 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
 		477B029421B57A8700D68225 /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 			children = (
 				2F23E29120FDCD1900487BA5 /* LoginTableViewController.swift */,
 				477B02D821B94AEE00D68225 /* LandingPageViewController.swift */,
+				47738C3921B9E232005834FD /* LoginRootViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -777,6 +780,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Paystack/Paystack.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -791,6 +795,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Paystack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -906,6 +911,7 @@
 				477B029A21B57A8800D68225 /* MFSideMenuContainerViewController.m in Sources */,
 				2F23E2A620FE11DF00487BA5 /* NIDropDown.m in Sources */,
 				2F372252210094A80002ADBF /* AlamofireSubClass.swift in Sources */,
+				47738C3A21B9E232005834FD /* LoginRootViewController.swift in Sources */,
 				2F23E29220FDCD1900487BA5 /* LoginTableViewController.swift in Sources */,
 				2F23E29C20FE052200487BA5 /* SelectPreferredInstitutionViewController.swift in Sources */,
 				2FCA608520FF361F00D9BA65 /* RateDriverViewController.swift in Sources */,
