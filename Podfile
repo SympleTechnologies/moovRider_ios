@@ -16,7 +16,7 @@ pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'Firebase/Core'
 pod 'Firebase/Database'
-pod 'XLPagerTabStrip', :git => 'https://github.com/Dagogatc/XLPagerTabStrip.git', :branch => 'moveToViewController-issue'
+pod 'XLPagerTabStrip', '~> 8.1'
   # Pods for Moov_Rider
 
 end

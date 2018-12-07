@@ -11,14 +11,12 @@ import XLPagerTabStrip
 
 class RegistrationViewController: UIViewController, UITextFieldDelegate, IndicatorInfoProvider {
     
-    @IBOutlet weak var topView: BorderView!
     @IBOutlet weak var textFieldFirstName: UITextField!
     @IBOutlet weak var textFieldSurName: UITextField!
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
     @IBOutlet weak var textFieldConfirmPassword: UITextField!
     @IBOutlet weak var continueButton: UIButton!
-    @IBOutlet weak var signUpButton: UIButton!
 
     var activeTextfield: UITextField!
     
@@ -26,9 +24,6 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate, Indicat
         super.viewDidLoad()
         continueButton.layer.cornerRadius = 25.0
         continueButton.layer.masksToBounds = true
-        signUpButton.layer.cornerRadius = 25.0
-        signUpButton.layer.masksToBounds = true
-        topView.shouldDrawBottomBorder = true
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(keyboardHide))
         self.view.addGestureRecognizer(tapGesture)

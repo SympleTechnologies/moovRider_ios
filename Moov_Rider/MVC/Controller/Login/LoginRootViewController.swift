@@ -19,20 +19,29 @@ class LoginRootViewController: ButtonBarPagerTabStripViewController {
     var selectedPageIndex: Int?
 
     fileprivate let barBackgroundColor = UIColor(red:0.19, green:0.55, blue:0.27, alpha:1)
+    fileprivate var activity: UIActivityIndicatorView?
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+
+        // Show activity indicator
+        activity = UIActivityIndicatorView()
+        activity!.color = UIColor.black
+        activity!.center = self.view.center
+        activity!.bounds = self.view.bounds
+        activity!.backgroundColor = UIColor.white
+        self.view.addSubview(activity!)
+        activity!.startAnimating()
 
         view.backgroundColor = barBackgroundColor
 
-        spacerView.backgroundColor = barBackgroundColor
-        settings.style.buttonBarBackgroundColor = barBackgroundColor
-        settings.style.buttonBarItemBackgroundColor = barBackgroundColor
-        settings.style.selectedBarBackgroundColor = .white
+        spacerView.backgroundColor = UIColor(red:0.78, green:0.8, blue:0.82, alpha:1)
+        settings.style.buttonBarBackgroundColor = UIColor.white
+        settings.style.buttonBarItemBackgroundColor = UIColor.white
+        settings.style.selectedBarBackgroundColor = #colorLiteral(red: 1, green: 0.09803921569, blue: 0.3960784314, alpha: 1)
         settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 14)
         settings.style.selectedBarHeight = 2.0
-        settings.style.buttonBarMinimumLineSpacing = 0
-        settings.style.buttonBarItemTitleColor = .white
+        settings.style.buttonBarMinimumLineSpacing = 2.0
+        settings.style.buttonBarItemTitleColor = #colorLiteral(red: 0.5741485357, green: 0.5741624236, blue: 0.574154973, alpha: 1)
         settings.style.buttonBarItemsShouldFillAvailiableWidth = true
         settings.style.buttonBarLeftContentInset = 0
         settings.style.buttonBarRightContentInset = 0
@@ -41,13 +50,13 @@ class LoginRootViewController: ButtonBarPagerTabStripViewController {
             oldCell?.label.font = .systemFont(ofSize: 14)
             newCell?.label.font = .boldSystemFont(ofSize: 14)
         }
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        navigationController?.navigationBar.isTranslucent = false
         if selectedPageIndex == 1 {
-            self.moveToViewController(at: 1, animated: true)
+            self.moveToViewController(at: 1, animated: false)
         }
+        activity?.stopAnimating()
+        activity?.isHidden = true
+        super.viewDidLoad()
     }
 
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {

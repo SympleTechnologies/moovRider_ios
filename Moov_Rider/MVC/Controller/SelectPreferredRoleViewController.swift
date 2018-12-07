@@ -12,8 +12,6 @@ class SelectPreferredRoleViewController: UIViewController, NIDropDownDelegate {
 
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var textFieldRole: UITextField!
-    @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var topView: BorderView!
 
     var firstName: String!
     var surName: String!
@@ -44,9 +42,6 @@ class SelectPreferredRoleViewController: UIViewController, NIDropDownDelegate {
 
         continueButton.layer.cornerRadius = 25.0
         continueButton.layer.masksToBounds = true
-        signUpButton.layer.cornerRadius = 25.0
-        signUpButton.layer.masksToBounds = true
-        topView.shouldDrawBottomBorder = true
         nidropDown.delegate = self
         listUserRole()
     }

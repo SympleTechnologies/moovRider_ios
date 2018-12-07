@@ -14,8 +14,6 @@ class SelectPreferredInstitutionViewController: UIViewController, NIDropDownDele
     
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var textFieldUniv: UITextField!
-    @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var topView: BorderView!
     
     var firstName: String!
     var surName: String!
@@ -44,10 +42,8 @@ class SelectPreferredInstitutionViewController: UIViewController, NIDropDownDele
         super.viewDidLoad()
         continueButton.layer.cornerRadius = 25.0
         continueButton.layer.masksToBounds = true
-        signUpButton.layer.cornerRadius = 25.0
-        signUpButton.layer.masksToBounds = true
-        topView.shouldDrawBottomBorder = true
         nidropDown.delegate = self
+        self.title = "Sign up"
         self.listColleges()
     }
     
