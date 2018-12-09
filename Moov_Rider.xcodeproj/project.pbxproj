@@ -95,6 +95,7 @@
 		2FFBC211210634B000A077D9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFBC214210634B000A077D9 /* FBSDKCoreKit.framework */; };
 		2FFBC212210634B000A077D9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFBC215210634B000A077D9 /* FBSDKLoginKit.framework */; };
 		37794D8F1624A79E15BDFEA4 /* Pods_Moov_Rider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3A43A1B53B6C877651E666 /* Pods_Moov_Rider.framework */; };
+		476F239A21BDA6BF00D65FD6 /* DropdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F239921BDA6BF00D65FD6 /* DropdownButton.swift */; };
 		47738C3A21B9E232005834FD /* LoginRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47738C3921B9E232005834FD /* LoginRootViewController.swift */; };
 		477B029A21B57A8800D68225 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B029321B57A8700D68225 /* MFSideMenuContainerViewController.m */; };
 		477B029B21B57A8800D68225 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B029421B57A8700D68225 /* UIViewController+MFSideMenuAdditions.m */; };
@@ -245,6 +246,7 @@
 		2FFBC213210634B000A077D9 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFBC214210634B000A077D9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFBC215210634B000A077D9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		476F239921BDA6BF00D65FD6 /* DropdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
 		47738C3921B9E232005834FD /* LoginRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRootViewController.swift; sourceTree = "<group>"; };
 		477B029121B577DD00D68225 /* Moov_Rider-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Moov_Rider-Bridging-Header.h"; path = "Moov_Rider/Moov_Rider-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		477B029321B57A8700D68225 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
@@ -677,6 +679,7 @@
 			children = (
 				477B02D221B7FB8200D68225 /* RoundedView.swift */,
 				477B02D421B8021100D68225 /* BorderView.swift */,
+				476F239921BDA6BF00D65FD6 /* DropdownButton.swift */,
 			);
 			path = UIViewExtension;
 			sourceTree = "<group>";
@@ -861,6 +864,7 @@
 				2FE11A2C21520F0E007F89F0 /* GeoFire-Prefix.pch in Sources */,
 				2FE11A2D21520F0E007F89F0 /* GeoFire+Private.h in Sources */,
 				2FE11A2E21520F0E007F89F0 /* GFBase32Utils.h in Sources */,
+				476F239A21BDA6BF00D65FD6 /* DropdownButton.swift in Sources */,
 				477B02D521B8021100D68225 /* BorderView.swift in Sources */,
 				477B02D321B7FB8200D68225 /* RoundedView.swift in Sources */,
 				2FE11A2F21520F0E007F89F0 /* GFGeoHash.h in Sources */,

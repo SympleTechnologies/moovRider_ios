@@ -4969,7 +4969,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="AqJ-k0-yzE" kind="relationship" relationship="rootViewController" id="kzC-0a-6SL"/>
+                        <segue destination="AqJ-k0-yzE" kind="relationship" relationship="rootViewController" id="Cme-JU-abJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doI-Am-3bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5077,7 +5077,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYw-KJ-o9m">
-                                                <rect key="frame" x="25" y="461" width="180" height="50"/>
+                                                <rect key="frame" x="25" y="466" width="180" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="dkd-L2-muX"/>
                                                     <constraint firstAttribute="width" constant="180" id="i89-Xl-Afh"/>
@@ -5090,9 +5090,9 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h57-6v-5Iz" customClass="CardView" customModule="Moov_Rider" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="371" width="325" height="60"/>
+                                                <rect key="frame" x="25" y="281" width="325" height="60"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZ9-fL-XQY">
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZ9-fL-XQY">
                                                         <rect key="frame" x="10" y="0.0" width="315" height="60"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -5109,9 +5109,9 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJQ-04-cQ4" customClass="CardView" customModule="Moov_Rider" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="281" width="325" height="60"/>
+                                                <rect key="frame" x="25" y="371" width="325" height="60"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AVz-NG-PnA">
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AVz-NG-PnA">
                                                         <rect key="frame" x="10" y="0.0" width="315" height="60"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -5137,19 +5137,19 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="IJQ-04-cQ4" secondAttribute="trailing" constant="25" id="1be-3n-Xp5"/>
-                                            <constraint firstItem="h57-6v-5Iz" firstAttribute="top" secondItem="IJQ-04-cQ4" secondAttribute="bottom" constant="30" id="2JA-Xw-kCz"/>
                                             <constraint firstAttribute="trailing" secondItem="h57-6v-5Iz" secondAttribute="trailing" constant="25" id="78m-7K-cVT"/>
                                             <constraint firstAttribute="bottom" secondItem="Dse-2R-xYu" secondAttribute="bottom" constant="50" id="CGg-ns-qUa"/>
-                                            <constraint firstItem="TYw-KJ-o9m" firstAttribute="top" secondItem="h57-6v-5Iz" secondAttribute="bottom" constant="30" id="EkE-9d-bpE"/>
                                             <constraint firstItem="pGm-SL-DNI" firstAttribute="centerX" secondItem="7L7-ie-prd" secondAttribute="centerX" id="GJd-el-gzH"/>
+                                            <constraint firstItem="IJQ-04-cQ4" firstAttribute="top" secondItem="h57-6v-5Iz" secondAttribute="bottom" constant="30" id="JAh-fW-Foa"/>
                                             <constraint firstItem="IJQ-04-cQ4" firstAttribute="leading" secondItem="7L7-ie-prd" secondAttribute="leading" constant="25" id="Nmn-0M-bAi"/>
-                                            <constraint firstItem="IJQ-04-cQ4" firstAttribute="top" secondItem="1PI-z9-Avj" secondAttribute="bottom" constant="75" id="PBf-RV-hkW"/>
                                             <constraint firstAttribute="trailing" secondItem="Dse-2R-xYu" secondAttribute="trailing" constant="25" id="UWJ-03-QSc"/>
                                             <constraint firstItem="Pps-DF-bNc" firstAttribute="leading" secondItem="1PI-z9-Avj" secondAttribute="trailing" constant="10" id="VXn-f5-KIo"/>
                                             <constraint firstAttribute="height" constant="700" id="X00-oH-Wsi"/>
+                                            <constraint firstItem="h57-6v-5Iz" firstAttribute="top" secondItem="Pps-DF-bNc" secondAttribute="bottom" constant="75" id="biG-dZ-xyh"/>
                                             <constraint firstItem="1PI-z9-Avj" firstAttribute="top" secondItem="pGm-SL-DNI" secondAttribute="bottom" constant="20" id="e0H-Fx-c0G"/>
                                             <constraint firstItem="pGm-SL-DNI" firstAttribute="top" secondItem="7L7-ie-prd" secondAttribute="top" constant="70" id="eds-ky-8Wm"/>
                                             <constraint firstItem="1PI-z9-Avj" firstAttribute="leading" secondItem="pGm-SL-DNI" secondAttribute="leading" constant="-20" id="gz4-qm-4Wb"/>
+                                            <constraint firstItem="TYw-KJ-o9m" firstAttribute="top" secondItem="IJQ-04-cQ4" secondAttribute="bottom" constant="35" id="jRz-Mm-bj2"/>
                                             <constraint firstItem="Dse-2R-xYu" firstAttribute="leading" secondItem="7L7-ie-prd" secondAttribute="leading" constant="25" id="lFf-1t-M8s"/>
                                             <constraint firstItem="Pps-DF-bNc" firstAttribute="centerY" secondItem="1PI-z9-Avj" secondAttribute="centerY" id="le9-Vq-gXp"/>
                                             <constraint firstItem="TYw-KJ-o9m" firstAttribute="leading" secondItem="7L7-ie-prd" secondAttribute="leading" constant="25" id="oOo-WZ-xSq"/>
@@ -5325,7 +5325,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TyK-Au-NTc" customClass="CardView" customModule="Moov_Rider" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="152.5" height="60"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xoI-Kt-R7U">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xoI-Kt-R7U">
                                                                 <rect key="frame" x="10" y="0.0" width="142.5" height="60"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -5343,7 +5343,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clj-kP-NWs" customClass="CardView" customModule="Moov_Rider" customModuleProvider="target">
                                                         <rect key="frame" x="172.5" y="0.0" width="152.5" height="60"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTP-Qj-Jmv">
+                                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTP-Qj-Jmv">
                                                                 <rect key="frame" x="10" y="0.0" width="142.5" height="60"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -5366,7 +5366,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOa-bS-yW4" customClass="CardView" customModule="Moov_Rider" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="331" width="325" height="60"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzc-Uh-wi2">
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzc-Uh-wi2">
                                                         <rect key="frame" x="10" y="0.0" width="315" height="60"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -5624,14 +5624,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="utA-MU-fzr"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tKr-al-OCV"/>
                     <connections>
+                        <outlet property="cardView" destination="STj-zf-lRa" id="w7r-4h-e1y"/>
                         <outlet property="continueButton" destination="1pe-KE-IJj" id="E0b-4Q-xXR"/>
+                        <outlet property="dropBtn" destination="mhU-nC-drZ" id="YSM-ik-ccB"/>
                         <outlet property="textFieldUniv" destination="cka-Hy-kR8" id="cls-el-lep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cR-Go-9MA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2628" y="940"/>
+            <point key="canvasLocation" x="2610" y="842"/>
         </scene>
         <!--Select Preferred Role View Controller-->
         <scene sceneID="E1V-zo-lp8">
