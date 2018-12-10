@@ -43,6 +43,10 @@ class SelectPreferredRoleViewController: UIViewController, NIDropDownDelegate {
         continueButton.layer.cornerRadius = 25.0
         continueButton.layer.masksToBounds = true
         nidropDown.delegate = self
+
+        self.navigationItem.title = "Sign up"
+        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.red]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
         listUserRole()
     }
 
@@ -71,23 +75,14 @@ class SelectPreferredRoleViewController: UIViewController, NIDropDownDelegate {
     }
 
     @IBAction func buttonSelectRoleAction(_ sender: UIButton) {
-        sender.isSelected   = !sender.isSelected
-//        selectUniversity = false
         if isDropDownOpen == true {
             nidropDown.hide(sender)
-//            if previousDropBtn != sender {
-//                previousDropBtn.isSelected = !previousDropBtn.isSelected
-//            }
             isDropDownOpen = false
-        }
-        if sender.isSelected == true {
+        } else {
             nidropDown.show(sender,120.0, arrayDropDwnUserRole as! [Any], nil, "down")
             //(sender, 120.0 , , nil, "down")
             isDropDownOpen = true
-        }else {
-            nidropDown.hide(sender)
         }
-//        previousDropBtn = sender
 
     }
 

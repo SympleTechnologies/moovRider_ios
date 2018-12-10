@@ -74,7 +74,7 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
-  - XLPagerTabStrip (8.1.0)
+  - XLPagerTabStrip (8.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
@@ -87,7 +87,7 @@ DEPENDENCIES:
   - GoogleSignIn
   - Paystack
   - SDWebImage (~> 4.0)
-  - XLPagerTabStrip (~> 8.1)
+  - XLPagerTabStrip (from `https://github.com/Dagogatc/XLPagerTabStrip.git`, branch `moveToViewController-issue`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -111,7 +111,16 @@ SPEC REPOS:
     - nanopb
     - Paystack
     - SDWebImage
-    - XLPagerTabStrip
+
+EXTERNAL SOURCES:
+  XLPagerTabStrip:
+    :branch: moveToViewController-issue
+    :git: https://github.com/Dagogatc/XLPagerTabStrip.git
+
+CHECKOUT OPTIONS:
+  XLPagerTabStrip:
+    :commit: 2fcc871db1b7b929810f625f3cb76bb95dcfa320
+    :git: https://github.com/Dagogatc/XLPagerTabStrip.git
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
@@ -134,8 +143,8 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Paystack: 21a16fe02cca6cc94618a2b68b7402917179ca0b
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
-  XLPagerTabStrip: 22d4c58200d7c105e0e407ab6bfd01a5d85014be
+  XLPagerTabStrip: 347144ea331dee5566be29a110d25d281a6b32ec
 
-PODFILE CHECKSUM: 93945058d2943a048702f604176532f25559f0ff
+PODFILE CHECKSUM: cc5baa5064e2ca2f2c1cafaab62872dfd7f55cf9
 
 COCOAPODS: 1.5.3

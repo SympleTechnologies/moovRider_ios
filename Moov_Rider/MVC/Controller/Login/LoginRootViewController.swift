@@ -22,16 +22,6 @@ class LoginRootViewController: ButtonBarPagerTabStripViewController {
     fileprivate var activity: UIActivityIndicatorView?
 
     override func viewDidLoad() {
-
-        // Show activity indicator
-        activity = UIActivityIndicatorView()
-        activity!.color = UIColor.black
-        activity!.center = self.view.center
-        activity!.bounds = self.view.bounds
-        activity!.backgroundColor = UIColor.white
-        self.view.addSubview(activity!)
-        activity!.startAnimating()
-
         view.backgroundColor = barBackgroundColor
 
         spacerView.backgroundColor = UIColor(red:0.78, green:0.8, blue:0.82, alpha:1)
@@ -51,12 +41,27 @@ class LoginRootViewController: ButtonBarPagerTabStripViewController {
             newCell?.label.font = .boldSystemFont(ofSize: 14)
         }
         navigationController?.navigationBar.isTranslucent = false
+        super.viewDidLoad()
+        // Show activity indicator
+        activity = UIActivityIndicatorView()
+        activity!.color = UIColor.black
+        activity!.center = self.view.center
+        activity!.bounds = self.view.bounds
+        activity!.backgroundColor = UIColor.white
+        self.view.addSubview(activity!)
+        activity!.startAnimating()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         if selectedPageIndex == 1 {
             self.moveToViewController(at: 1, animated: false)
         }
+        self.navigationItem.title = "Moov"
+        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.red]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
         activity?.stopAnimating()
         activity?.isHidden = true
-        super.viewDidLoad()
     }
 
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
