@@ -95,13 +95,20 @@
 		2FFBC211210634B000A077D9 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFBC214210634B000A077D9 /* FBSDKCoreKit.framework */; };
 		2FFBC212210634B000A077D9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFBC215210634B000A077D9 /* FBSDKLoginKit.framework */; };
 		37794D8F1624A79E15BDFEA4 /* Pods_Moov_Rider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3A43A1B53B6C877651E666 /* Pods_Moov_Rider.framework */; };
-		6E090C5421B534E20084B246 /* SPGooglePlacesPlaceDetailQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E090C4E21B534E20084B246 /* SPGooglePlacesPlaceDetailQuery.m */; };
-		6E090C5521B534E20084B246 /* SPGooglePlacesAutocompletePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E090C4F21B534E20084B246 /* SPGooglePlacesAutocompletePlace.m */; };
-		6E090C5621B534E20084B246 /* SPGooglePlacesAutocompleteUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E090C5021B534E20084B246 /* SPGooglePlacesAutocompleteUtilities.m */; };
-		6E090C5721B534E20084B246 /* SPGooglePlacesAutocompleteQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E090C5321B534E20084B246 /* SPGooglePlacesAutocompleteQuery.m */; };
-		6E090C6C21B535380084B246 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E090C6521B535380084B246 /* MFSideMenuContainerViewController.m */; };
-		6E090C6D21B535380084B246 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E090C6621B535380084B246 /* UIViewController+MFSideMenuAdditions.m */; };
-		6E090C6E21B535380084B246 /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E090C6B21B535380084B246 /* MFSideMenuShadow.m */; };
+		476F239A21BDA6BF00D65FD6 /* DropdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F239921BDA6BF00D65FD6 /* DropdownButton.swift */; };
+		476F239C21BE91E600D65FD6 /* launchimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 476F239B21BE91E600D65FD6 /* launchimage.png */; };
+		47738C3A21B9E232005834FD /* LoginRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47738C3921B9E232005834FD /* LoginRootViewController.swift */; };
+		477B029A21B57A8800D68225 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B029321B57A8700D68225 /* MFSideMenuContainerViewController.m */; };
+		477B029B21B57A8800D68225 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B029421B57A8700D68225 /* UIViewController+MFSideMenuAdditions.m */; };
+		477B029C21B57A8800D68225 /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B029921B57A8700D68225 /* MFSideMenuShadow.m */; };
+		477B02CD21B7F9E600D68225 /* SPGooglePlacesAutocompleteUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B02C621B7F9E600D68225 /* SPGooglePlacesAutocompleteUtilities.m */; };
+		477B02CE21B7F9E600D68225 /* SPGooglePlacesAutocompleteQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B02C821B7F9E600D68225 /* SPGooglePlacesAutocompleteQuery.m */; };
+		477B02CF21B7F9E600D68225 /* SPGooglePlacesAutocompletePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B02C921B7F9E600D68225 /* SPGooglePlacesAutocompletePlace.m */; };
+		477B02D021B7F9E600D68225 /* SPGooglePlacesPlaceDetailQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B02CC21B7F9E600D68225 /* SPGooglePlacesPlaceDetailQuery.m */; };
+		477B02D321B7FB8200D68225 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B02D221B7FB8200D68225 /* RoundedView.swift */; };
+		477B02D521B8021100D68225 /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B02D421B8021100D68225 /* BorderView.swift */; };
+		477B02D721B8661B00D68225 /* SelectPreferredRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B02D621B8661B00D68225 /* SelectPreferredRoleViewController.swift */; };
+		477B02D921B94AEE00D68225 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B02D821B94AEE00D68225 /* LandingPageViewController.swift */; };
 		6E090C7521B536340084B246 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E090C7421B536340084B246 /* CosmosDistrib.swift */; };
 		6E67306A21B531E700F788FF /* PreviousRidesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67306921B531E700F788FF /* PreviousRidesTableViewCell.swift */; };
 		6E67306C21B5323F00F788FF /* PaymentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67306B21B5323F00F788FF /* PaymentListTableViewCell.swift */; };
@@ -240,22 +247,30 @@
 		2FFBC213210634B000A077D9 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFBC214210634B000A077D9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFBC215210634B000A077D9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		476F239921BDA6BF00D65FD6 /* DropdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
+		476F239B21BE91E600D65FD6 /* launchimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchimage.png; sourceTree = "<group>"; };
+		47738C3921B9E232005834FD /* LoginRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRootViewController.swift; sourceTree = "<group>"; };
+		477B029121B577DD00D68225 /* Moov_Rider-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Moov_Rider-Bridging-Header.h"; path = "Moov_Rider/Moov_Rider-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		477B029321B57A8700D68225 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
+		477B029421B57A8700D68225 /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
+		477B029521B57A8700D68225 /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
+		477B029621B57A8700D68225 /* MFSideMenuShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuShadow.h; sourceTree = "<group>"; };
+		477B029721B57A8700D68225 /* UIViewController+MFSideMenuAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MFSideMenuAdditions.h"; sourceTree = "<group>"; };
+		477B029821B57A8700D68225 /* MFSideMenuContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuContainerViewController.h; sourceTree = "<group>"; };
+		477B029921B57A8700D68225 /* MFSideMenuShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuShadow.m; sourceTree = "<group>"; };
+		477B02C521B7F9E600D68225 /* SPGooglePlacesAutocompletePlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGooglePlacesAutocompletePlace.h; sourceTree = "<group>"; };
+		477B02C621B7F9E600D68225 /* SPGooglePlacesAutocompleteUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGooglePlacesAutocompleteUtilities.m; sourceTree = "<group>"; };
+		477B02C721B7F9E600D68225 /* SPGooglePlacesPlaceDetailQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGooglePlacesPlaceDetailQuery.h; sourceTree = "<group>"; };
+		477B02C821B7F9E600D68225 /* SPGooglePlacesAutocompleteQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGooglePlacesAutocompleteQuery.m; sourceTree = "<group>"; };
+		477B02C921B7F9E600D68225 /* SPGooglePlacesAutocompletePlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGooglePlacesAutocompletePlace.m; sourceTree = "<group>"; };
+		477B02CA21B7F9E600D68225 /* SPGooglePlacesAutocompleteUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGooglePlacesAutocompleteUtilities.h; sourceTree = "<group>"; };
+		477B02CB21B7F9E600D68225 /* SPGooglePlacesAutocompleteQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGooglePlacesAutocompleteQuery.h; sourceTree = "<group>"; };
+		477B02CC21B7F9E600D68225 /* SPGooglePlacesPlaceDetailQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGooglePlacesPlaceDetailQuery.m; sourceTree = "<group>"; };
+		477B02D221B7FB8200D68225 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		477B02D421B8021100D68225 /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		477B02D621B8661B00D68225 /* SelectPreferredRoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPreferredRoleViewController.swift; sourceTree = "<group>"; };
+		477B02D821B94AEE00D68225 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		5869ADF509256E188040B675 /* Pods-Moov_Rider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moov_Rider.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moov_Rider/Pods-Moov_Rider.release.xcconfig"; sourceTree = "<group>"; };
-		6E090C4C21B534E20084B246 /* SPGooglePlacesAutocompletePlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesAutocompletePlace.h; path = ../../../../oforchinedu/Downloads/SPGooglePlaces/SPGooglePlacesAutocompletePlace.h; sourceTree = "<group>"; };
-		6E090C4D21B534E20084B246 /* SPGooglePlacesAutocompleteUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesAutocompleteUtilities.h; path = ../../../../oforchinedu/Downloads/SPGooglePlaces/SPGooglePlacesAutocompleteUtilities.h; sourceTree = "<group>"; };
-		6E090C4E21B534E20084B246 /* SPGooglePlacesPlaceDetailQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesPlaceDetailQuery.m; path = ../../../../oforchinedu/Downloads/SPGooglePlaces/SPGooglePlacesPlaceDetailQuery.m; sourceTree = "<group>"; };
-		6E090C4F21B534E20084B246 /* SPGooglePlacesAutocompletePlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesAutocompletePlace.m; path = ../../../../oforchinedu/Downloads/SPGooglePlaces/SPGooglePlacesAutocompletePlace.m; sourceTree = "<group>"; };
-		6E090C5021B534E20084B246 /* SPGooglePlacesAutocompleteUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesAutocompleteUtilities.m; path = ../../../../oforchinedu/Downloads/SPGooglePlaces/SPGooglePlacesAutocompleteUtilities.m; sourceTree = "<group>"; };
-		6E090C5121B534E20084B246 /* SPGooglePlacesPlaceDetailQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesPlaceDetailQuery.h; path = ../../../../oforchinedu/Downloads/SPGooglePlaces/SPGooglePlacesPlaceDetailQuery.h; sourceTree = "<group>"; };
-		6E090C5221B534E20084B246 /* SPGooglePlacesAutocompleteQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesAutocompleteQuery.h; path = ../../../../oforchinedu/Downloads/SPGooglePlaces/SPGooglePlacesAutocompleteQuery.h; sourceTree = "<group>"; };
-		6E090C5321B534E20084B246 /* SPGooglePlacesAutocompleteQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesAutocompleteQuery.m; path = ../../../../oforchinedu/Downloads/SPGooglePlaces/SPGooglePlacesAutocompleteQuery.m; sourceTree = "<group>"; };
-		6E090C6521B535380084B246 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
-		6E090C6621B535380084B246 /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
-		6E090C6721B535380084B246 /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
-		6E090C6821B535380084B246 /* MFSideMenuShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuShadow.h; sourceTree = "<group>"; };
-		6E090C6921B535380084B246 /* UIViewController+MFSideMenuAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MFSideMenuAdditions.h"; sourceTree = "<group>"; };
-		6E090C6A21B535380084B246 /* MFSideMenuContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenuContainerViewController.h; sourceTree = "<group>"; };
-		6E090C6B21B535380084B246 /* MFSideMenuShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuShadow.m; sourceTree = "<group>"; };
 		6E090C7421B536340084B246 /* CosmosDistrib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
 		6E67306921B531E700F788FF /* PreviousRidesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRidesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		6E67306B21B5323F00F788FF /* PaymentListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -306,11 +321,11 @@
 		2F23E29620FE047900487BA5 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				6E090C6421B535380084B246 /* MFSideMenu */,
+				477B02C421B7F9E600D68225 /* SPGooglePlaces */,
+				477B029221B57A8700D68225 /* MFSideMenu */,
 				2FE11A1121520E4F007F89F0 /* GeoFire */,
 				2F210688212E88A900FA9265 /* FloatRatingView.swift */,
 				2FBFB3AE2148DE24001FD344 /* ShadowView */,
-				2F56F8C02101DD84008F099F /* SPGooglePlaces */,
 				2F56F8B42101DC38008F099F /* BMGooglePlaces */,
 				2FB181E221019DA700065786 /* ServiceManager.swift */,
 				2FB181F921019E6500065786 /* Alamofire */,
@@ -335,6 +350,8 @@
 			isa = PBXGroup;
 			children = (
 				2F23E29120FDCD1900487BA5 /* LoginTableViewController.swift */,
+				477B02D821B94AEE00D68225 /* LandingPageViewController.swift */,
+				47738C3921B9E232005834FD /* LoginRootViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -404,22 +421,6 @@
 			path = BMGooglePlaces;
 			sourceTree = "<group>";
 		};
-		2F56F8C02101DD84008F099F /* SPGooglePlaces */ = {
-			isa = PBXGroup;
-			children = (
-				6E090C4C21B534E20084B246 /* SPGooglePlacesAutocompletePlace.h */,
-				6E090C4F21B534E20084B246 /* SPGooglePlacesAutocompletePlace.m */,
-				6E090C5221B534E20084B246 /* SPGooglePlacesAutocompleteQuery.h */,
-				6E090C5321B534E20084B246 /* SPGooglePlacesAutocompleteQuery.m */,
-				6E090C4D21B534E20084B246 /* SPGooglePlacesAutocompleteUtilities.h */,
-				6E090C5021B534E20084B246 /* SPGooglePlacesAutocompleteUtilities.m */,
-				6E090C5121B534E20084B246 /* SPGooglePlacesPlaceDetailQuery.h */,
-				6E090C4E21B534E20084B246 /* SPGooglePlacesPlaceDetailQuery.m */,
-			);
-			name = SPGooglePlaces;
-			path = ../../../../../../Documents/Visakh/Taskmap/SPGooglePlaces;
-			sourceTree = "<group>";
-		};
 		2F74150620FDC58E00A0C94E = {
 			isa = PBXGroup;
 			children = (
@@ -446,6 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				2F9DDB342102FFFA000AA30C /* Moov_Rider.entitlements */,
+				477B029121B577DD00D68225 /* Moov_Rider-Bridging-Header.h */,
 				2F23E29620FE047900487BA5 /* External */,
 				2F23E28F20FDCB0900487BA5 /* Common Functions */,
 				2F74152B20FDC66800A0C94E /* App Delegate */,
@@ -454,6 +456,7 @@
 				2F74151E20FDC58E00A0C94E /* LaunchScreen.storyboard */,
 				2FE11A0F21520B6A007F89F0 /* GoogleService-Info.plist */,
 				2F74152120FDC58E00A0C94E /* Info.plist */,
+				476F239B21BE91E600D65FD6 /* launchimage.png */,
 				2F74151920FDC58E00A0C94E /* Moov_Rider.xcdatamodeld */,
 			);
 			path = Moov_Rider;
@@ -497,6 +500,7 @@
 				2FE5604721462EDA00156896 /* WalletToBankTableViewController.swift */,
 				2FE5604921463DCF00156896 /* WalletToWalletTableViewController.swift */,
 				2FE5604B21467ADC00156896 /* TalkToUsTableViewController.swift */,
+				477B02D621B8661B00D68225 /* SelectPreferredRoleViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -504,6 +508,7 @@
 		2F74152920FDC62C00A0C94E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				477B02D121B7FB6100D68225 /* UIViewExtension */,
 				2F74151620FDC58E00A0C94E /* Main.storyboard */,
 			);
 			path = View;
@@ -643,19 +648,43 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		6E090C6421B535380084B246 /* MFSideMenu */ = {
+		477B029221B57A8700D68225 /* MFSideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				6E090C6521B535380084B246 /* MFSideMenuContainerViewController.m */,
-				6E090C6621B535380084B246 /* UIViewController+MFSideMenuAdditions.m */,
-				6E090C6721B535380084B246 /* MFSideMenu.h */,
-				6E090C6821B535380084B246 /* MFSideMenuShadow.h */,
-				6E090C6921B535380084B246 /* UIViewController+MFSideMenuAdditions.h */,
-				6E090C6A21B535380084B246 /* MFSideMenuContainerViewController.h */,
-				6E090C6B21B535380084B246 /* MFSideMenuShadow.m */,
+				477B029321B57A8700D68225 /* MFSideMenuContainerViewController.m */,
+				477B029421B57A8700D68225 /* UIViewController+MFSideMenuAdditions.m */,
+				477B029521B57A8700D68225 /* MFSideMenu.h */,
+				477B029621B57A8700D68225 /* MFSideMenuShadow.h */,
+				477B029721B57A8700D68225 /* UIViewController+MFSideMenuAdditions.h */,
+				477B029821B57A8700D68225 /* MFSideMenuContainerViewController.h */,
+				477B029921B57A8700D68225 /* MFSideMenuShadow.m */,
 			);
-			name = MFSideMenu;
-			path = ../../../../../Downloads/MFSideMenu;
+			path = MFSideMenu;
+			sourceTree = "<group>";
+		};
+		477B02C421B7F9E600D68225 /* SPGooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				477B02C521B7F9E600D68225 /* SPGooglePlacesAutocompletePlace.h */,
+				477B02C621B7F9E600D68225 /* SPGooglePlacesAutocompleteUtilities.m */,
+				477B02C721B7F9E600D68225 /* SPGooglePlacesPlaceDetailQuery.h */,
+				477B02C821B7F9E600D68225 /* SPGooglePlacesAutocompleteQuery.m */,
+				477B02C921B7F9E600D68225 /* SPGooglePlacesAutocompletePlace.m */,
+				477B02CA21B7F9E600D68225 /* SPGooglePlacesAutocompleteUtilities.h */,
+				477B02CB21B7F9E600D68225 /* SPGooglePlacesAutocompleteQuery.h */,
+				477B02CC21B7F9E600D68225 /* SPGooglePlacesPlaceDetailQuery.m */,
+			);
+			path = SPGooglePlaces;
+			sourceTree = "<group>";
+		};
+		477B02D121B7FB6100D68225 /* UIViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				477B02D221B7FB8200D68225 /* RoundedView.swift */,
+				477B02D421B8021100D68225 /* BorderView.swift */,
+				476F239921BDA6BF00D65FD6 /* DropdownButton.swift */,
+			);
+			path = UIViewExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -730,6 +759,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476F239C21BE91E600D65FD6 /* launchimage.png in Resources */,
 				2F74152020FDC58E00A0C94E /* LaunchScreen.storyboard in Resources */,
 				2F74151D20FDC58E00A0C94E /* Assets.xcassets in Resources */,
 				2FE11A1021520B6B007F89F0 /* GoogleService-Info.plist in Resources */,
@@ -757,6 +787,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Paystack/Paystack.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -771,6 +802,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Paystack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -830,16 +862,20 @@
 			files = (
 				2FE11A2821520F0E007F89F0 /* GeoFire.h in Sources */,
 				2FE11A2921520F0E007F89F0 /* GFCircleQuery.h in Sources */,
-				6E090C5721B534E20084B246 /* SPGooglePlacesAutocompleteQuery.m in Sources */,
+				477B02CF21B7F9E600D68225 /* SPGooglePlacesAutocompletePlace.m in Sources */,
 				2FE11A2A21520F0E007F89F0 /* GFQuery.h in Sources */,
 				2FE11A2B21520F0E007F89F0 /* GFRegionQuery.h in Sources */,
 				2FE11A2C21520F0E007F89F0 /* GeoFire-Prefix.pch in Sources */,
 				2FE11A2D21520F0E007F89F0 /* GeoFire+Private.h in Sources */,
 				2FE11A2E21520F0E007F89F0 /* GFBase32Utils.h in Sources */,
+				476F239A21BDA6BF00D65FD6 /* DropdownButton.swift in Sources */,
+				477B02D521B8021100D68225 /* BorderView.swift in Sources */,
+				477B02D321B7FB8200D68225 /* RoundedView.swift in Sources */,
 				2FE11A2F21520F0E007F89F0 /* GFGeoHash.h in Sources */,
 				2FE11A3021520F0E007F89F0 /* GFGeoHashQuery.h in Sources */,
 				2FE11A3121520F0E007F89F0 /* GFQuery+Private.h in Sources */,
 				2FBFB3BB21496475001FD344 /* Common.swift in Sources */,
+				477B02CD21B7F9E600D68225 /* SPGooglePlacesAutocompleteUtilities.m in Sources */,
 				2F0BAB372103566100723485 /* ViewController.swift in Sources */,
 				2FE11A2621520E50007F89F0 /* GFGeoHashQuery.m in Sources */,
 				6E67306A21B531E700F788FF /* PreviousRidesTableViewCell.swift in Sources */,
@@ -854,7 +890,6 @@
 				2F9F542D2100C7DD00310AE9 /* JHUDAnimationView.m in Sources */,
 				2F9F542E2100C7DD00310AE9 /* UIImage+JHUD.h in Sources */,
 				2FE11A2521520E50007F89F0 /* GFGeoHash.m in Sources */,
-				6E090C6C21B535380084B246 /* MFSideMenuContainerViewController.m in Sources */,
 				2F9F542F2100C7DD00310AE9 /* UIImage+JHUD.m in Sources */,
 				2F210689212E88A900FA9265 /* FloatRatingView.swift in Sources */,
 				2FE11A2421520E50007F89F0 /* GFBase32Utils.m in Sources */,
@@ -867,36 +902,39 @@
 				2FBF52A02140F37000C06C9A /* WalletToWalletViewController.swift in Sources */,
 				2FCA608220FF2D6200D9BA65 /* MICountryPicker.swift in Sources */,
 				2FCA608A20FF44C900D9BA65 /* SelectSeatsViewController.swift in Sources */,
+				477B02CE21B7F9E600D68225 /* SPGooglePlacesAutocompleteQuery.m in Sources */,
+				477B02D021B7F9E600D68225 /* SPGooglePlacesPlaceDetailQuery.m in Sources */,
+				477B02D921B94AEE00D68225 /* LandingPageViewController.swift in Sources */,
 				2F9FC3A82109E5D7002B75AC /* UnpaidPaymentViewController.swift in Sources */,
 				2F37222D21006B100002ADBF /* PaymentListViewController.swift in Sources */,
 				2FF2A7CD213D8FAD00011C81 /* FutureBookingViewController.swift in Sources */,
 				6E090C7521B536340084B246 /* CosmosDistrib.swift in Sources */,
+				477B02D721B8661B00D68225 /* SelectPreferredRoleViewController.swift in Sources */,
 				2FBFB3B42148DE24001FD344 /* UIView.swift in Sources */,
 				2FE4A0862100E01B00E16791 /* ForgetPassWordView.swift in Sources */,
-				6E090C6E21B535380084B246 /* MFSideMenuShadow.m in Sources */,
 				2F23E2A520FE11DF00487BA5 /* NIDropDown.h in Sources */,
 				2F23E2AA20FE28F200487BA5 /* EnterDestinationViewController.swift in Sources */,
 				2F372232210091260002ADBF /* Generic.swift in Sources */,
+				477B029B21B57A8800D68225 /* UIViewController+MFSideMenuAdditions.m in Sources */,
+				477B029A21B57A8800D68225 /* MFSideMenuContainerViewController.m in Sources */,
 				2F23E2A620FE11DF00487BA5 /* NIDropDown.m in Sources */,
 				2F372252210094A80002ADBF /* AlamofireSubClass.swift in Sources */,
+				47738C3A21B9E232005834FD /* LoginRootViewController.swift in Sources */,
 				2F23E29220FDCD1900487BA5 /* LoginTableViewController.swift in Sources */,
 				2F23E29C20FE052200487BA5 /* SelectPreferredInstitutionViewController.swift in Sources */,
 				2FCA608520FF361F00D9BA65 /* RateDriverViewController.swift in Sources */,
 				2F74151B20FDC58E00A0C94E /* Moov_Rider.xcdatamodeld in Sources */,
 				2F7E1D8721072E6E0057A1F6 /* UpdatePhoneNumberViewController.swift in Sources */,
-				6E090C5621B534E20084B246 /* SPGooglePlacesAutocompleteUtilities.m in Sources */,
+				477B029C21B57A8800D68225 /* MFSideMenuShadow.m in Sources */,
 				2F23E29520FDE54400487BA5 /* RegistrationTableViewController.swift in Sources */,
 				2FD1574C20FE5716007CEEBC /* EditProfileTableViewController.swift in Sources */,
 				2FBFB3B32148DE24001FD344 /* SwiftyInnerShadowView.swift in Sources */,
-				6E090C6D21B535380084B246 /* UIViewController+MFSideMenuAdditions.m in Sources */,
 				2F23E2A820FE216500487BA5 /* EnterMobileNumberViewController.swift in Sources */,
-				6E090C5521B534E20084B246 /* SPGooglePlacesAutocompletePlace.m in Sources */,
 				2FE5604C21467ADC00156896 /* TalkToUsTableViewController.swift in Sources */,
 				2F15DC512142789D000FAF4C /* WalletToBankViewController.swift in Sources */,
 				2F37222521004C700002ADBF /* MyWalletViewController.swift in Sources */,
 				2F1701292103886B00AE3A90 /* PreviousRidesViewController.swift in Sources */,
 				2FBFB3B22148DE24001FD344 /* SwiftyInnerShadowLayer.swift in Sources */,
-				6E090C5421B534E20084B246 /* SPGooglePlacesPlaceDetailQuery.m in Sources */,
 				2F74151320FDC58E00A0C94E /* AppDelegate.swift in Sources */,
 				2FE5604A21463DCF00156896 /* WalletToWalletTableViewController.swift in Sources */,
 				2FD1573B20FE4996007CEEBC /* SideMenuTableViewController.swift in Sources */,
@@ -982,7 +1020,7 @@
 				PROVISIONING_PROFILE = "eca4ac57-34a0-4c01-9b27-2ee65ee567cf";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/oforchinedu/Documents/Moov_ios/Moov_Rider/Moov_Rider-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Moov_Rider/Moov_Rider-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
@@ -1035,7 +1073,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "eca4ac57-34a0-4c01-9b27-2ee65ee567cf";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/oforchinedu/Documents/Moov_ios/Moov_Rider/Moov_Rider-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Moov_Rider/Moov_Rider-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
@@ -1070,7 +1108,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0cc7f70e-9f8c-425f-be6e-c3f2da464c9a";
 				PROVISIONING_PROFILE_SPECIFIER = "DevelopmentProvisioningProfileForMoovRiderJun'18";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/oforchinedu/Documents/Moov_ios/Moov_Rider/Moov_Rider-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Moov_Rider/Moov_Rider-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1106,7 +1144,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0cc7f70e-9f8c-425f-be6e-c3f2da464c9a";
 				PROVISIONING_PROFILE_SPECIFIER = "DevelopmentProvisioningProfileForMoovRiderJun'18";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/oforchinedu/Documents/Moov_ios/Moov_Rider/Moov_Rider-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Moov_Rider/Moov_Rider-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";

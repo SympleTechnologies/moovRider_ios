@@ -71,20 +71,21 @@ class EnterMobileNumberViewController: UIViewController, MICountryPickerDelegate
         paddingViewV.backgroundColor = UIColor.clear
         textFieldMobileNumber.leftView = paddingViewV
         
-        self.buttonNext.layer.cornerRadius = 10.0
+        self.buttonNext.layer.cornerRadius = 25.0
+        buttonNext.layer.masksToBounds = true
         self.textFieldMobileNumber.layer.borderColor = UIColor.lightGray.cgColor
         self.textFieldMobileNumber.layer.borderWidth =  1.0
         self.viewEnterMobileNumber.layer.borderColor = UIColor.lightGray.cgColor
         self.viewEnterMobileNumber.layer.borderWidth =  1.0
         
-        self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 10, width: self.view.frame.width, height: 50.0)
-        let btnMenu = UIButton(type: .custom)
-        btnMenu.setImage(#imageLiteral(resourceName: "Back_Button_3x"), for: .normal)
-        btnMenu.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        btnMenu.addTarget(self, action: #selector(sideMenuAction), for: .touchUpInside)
-        let item3 = UIBarButtonItem(customView: btnMenu)
-        self.navigationItem.setLeftBarButton(item3, animated: true)
-        
+//        self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 10, width: self.view.frame.width, height: 50.0)
+//        let btnMenu = UIButton(type: .custom)
+//        btnMenu.setImage(#imageLiteral(resourceName: "Back_Button_3x"), for: .normal)
+//        btnMenu.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+//        btnMenu.addTarget(self, action: #selector(sideMenuAction), for: .touchUpInside)
+//        let item3 = UIBarButtonItem(customView: btnMenu)
+//        self.navigationItem.setLeftBarButton(item3, animated: true)
+
         /*let logo = UIImage(named: "Let’s moov!")
          let imageViewLogo = UIImageView(image:logo)
          self.navigationItem.titleView = imageViewLogo*/
@@ -132,20 +133,21 @@ class EnterMobileNumberViewController: UIViewController, MICountryPickerDelegate
     
     func registration()  {
         
-        var params  : NSDictionary?
-        var imageData = Data()
+        var params  = NSDictionary()
+//        var imageData = Data()
         let usertype = String(userRoleID!)
         let collegeId = String(collegeID!)
+        let deviceToken = appDelegate.deviceTokenStr != nil ? appDelegate.deviceTokenStr : ""
         if authProvider == "google"{
-             params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password":"", "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": authMode!,"auth_provider":authProvider!,"auth_uid":authUID!,"phone_country": self.textFieldCountryCode.text!, "image": imageUrl!,"device_type":"iOS","device_id":appDelegate.deviceTokenStr!,"push_token": appDelegate.deviceTokenStr!,"app_version":"1.2"]
-            imageData = self.imageData
+            params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password":"", "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": authMode!,"auth_provider":authProvider!,"auth_uid":authUID!,"phone_country": self.textFieldCountryCode.text!, "image": imageUrl!,"device_type":"iOS","device_id":deviceToken ?? "","push_token": deviceToken ?? "","app_version":"1.2"]
+//            imageData = self.imageData
         }else if authProvider == "facebook" {
-            params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password": password!, "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": authMode!,"auth_provider":authProvider!,"auth_uid":authUID!,"phone_country": self.textFieldCountryCode.text!, "image": imageUrl!,"device_type":"iOS","device_id":appDelegate.deviceTokenStr!,"push_token": appDelegate.deviceTokenStr!,"app_version":"1.2"]
+            params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password": password!, "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": authMode!,"auth_provider":authProvider!,"auth_uid":authUID!,"phone_country": self.textFieldCountryCode.text!, "image": imageUrl!,"device_type":"iOS","device_id":deviceToken ?? "","push_token": deviceToken ?? "","app_version":"1.2"]
         } else{
-            params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password": password!, "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": "email","auth_provider":"","auth_uid":"","phone_country": self.textFieldCountryCode.text!,"device_type":"iOS","device_id":appDelegate.deviceTokenStr!,"push_token": appDelegate.deviceTokenStr!,"app_version":"1.2"]
+            params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password": password!, "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": "email","auth_provider":"","auth_uid":"","phone_country": self.textFieldCountryCode.text!,"device_type":"iOS","device_id":deviceToken ?? "","push_token": deviceToken ?? "","app_version":"1.2"]
         }
         let hud = GenericFunctions.showJHud(target: self)
-            AlamofireSubclass.parseLinkUsingPostMethod("auth/register", with: params!, completion: { (success, response, error) in
+        AlamofireSubclass.parseLinkUsingPostMethod("auth/register", with: params, completion: { (success, response, error) in
             hud.hide()
             if success == true {
                 if response!["message"]as! String == "login success" {
@@ -193,9 +195,9 @@ class EnterMobileNumberViewController: UIViewController, MICountryPickerDelegate
         
         return true
     }
-    @objc func sideMenuAction() {
-        self.navigationController?.popViewController(animated: true)
-    }
+//    @objc func sideMenuAction() {
+//        self.navigationController?.popViewController(animated: true)
+//    }
 
    
 

@@ -115,7 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
     }
     
     func setRootToLogin(){
-        let LoginTableVC = self.storyboard.instantiateViewController(withIdentifier: "LoginTableViewController") as! LoginTableViewController
+        let LoginTableVC = self.storyboard.instantiateViewController(withIdentifier: "LandingPageViewController") as! LandingPageViewController
         let navVC = UINavigationController(rootViewController: LoginTableVC)
         self.window?.rootViewController = navVC
         self.window?.makeKeyAndVisible()
