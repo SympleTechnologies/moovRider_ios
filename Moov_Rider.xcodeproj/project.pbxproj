@@ -259,6 +259,7 @@
 		6E090C7421B536340084B246 /* CosmosDistrib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
 		6E67306921B531E700F788FF /* PreviousRidesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRidesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		6E67306B21B5323F00F788FF /* PaymentListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		6E97298921B5766B001AED3A /* Moov_Rider-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Moov_Rider-Bridging-Header.h"; sourceTree = "<group>"; };
 		82BCE26623F89F9FBD4FA996 /* Pods-Moov_Rider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moov_Rider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moov_Rider/Pods-Moov_Rider.debug.xcconfig"; sourceTree = "<group>"; };
 		CD3A43A1B53B6C877651E666 /* Pods_Moov_Rider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moov_Rider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -423,6 +424,7 @@
 		2F74150620FDC58E00A0C94E = {
 			isa = PBXGroup;
 			children = (
+				6E97298921B5766B001AED3A /* Moov_Rider-Bridging-Header.h */,
 				2F56F8B12101D9AA008F099F /* GooglePlaces.framework */,
 				2F56F8AE2101D99C008F099F /* GooglePlacePicker.framework */,
 				2F56F8A82101D97D008F099F /* GoogleMaps.framework */,
