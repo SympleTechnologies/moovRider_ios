@@ -5343,7 +5343,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clj-kP-NWs" customClass="CardView" customModule="Moov_Rider" customModuleProvider="target">
                                                         <rect key="frame" x="172.5" y="0.0" width="152.5" height="60"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTP-Qj-Jmv">
+                                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTP-Qj-Jmv">
                                                                 <rect key="frame" x="10" y="0.0" width="142.5" height="60"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -5366,7 +5366,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOa-bS-yW4" customClass="CardView" customModule="Moov_Rider" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="331" width="325" height="60"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzc-Uh-wi2">
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzc-Uh-wi2">
                                                         <rect key="frame" x="10" y="0.0" width="315" height="60"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -5385,7 +5385,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DED-XU-GnC" customClass="CardView" customModule="Moov_Rider" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="426" width="325" height="60"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dmc-g1-Ok9">
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dmc-g1-Ok9">
                                                         <rect key="frame" x="10" y="0.0" width="315" height="60"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -5404,7 +5404,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-5x-Bs8" customClass="CardView" customModule="Moov_Rider" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="521" width="325" height="60"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ig1-o1-bP3">
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ig1-o1-bP3">
                                                         <rect key="frame" x="10" y="0.0" width="315" height="60"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -5554,15 +5554,15 @@
                                             <constraint firstAttribute="width" constant="30" id="Qbb-Xp-uwi"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shape" translatesAutoresizingMaskIntoConstraints="NO" id="0f5-xN-4ga">
-                                        <rect key="frame" x="285" y="15" width="30" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron" translatesAutoresizingMaskIntoConstraints="NO" id="0f5-xN-4ga">
+                                        <rect key="frame" x="303" y="24" width="12" height="12"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="eU8-3n-Vyv"/>
-                                            <constraint firstAttribute="width" constant="30" id="ydA-t7-nVc"/>
+                                            <constraint firstAttribute="height" constant="12" id="eU8-3n-Vyv"/>
+                                            <constraint firstAttribute="width" constant="12" id="ydA-t7-nVc"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select University" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cka-Hy-kR8">
-                                        <rect key="frame" x="55" y="0.0" width="215" height="60"/>
+                                        <rect key="frame" x="55" y="0.0" width="233" height="60"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -5675,15 +5675,15 @@
                                             <constraint firstAttribute="width" constant="30" id="nCN-H5-HLt"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shape" translatesAutoresizingMaskIntoConstraints="NO" id="BSS-gc-8v3">
-                                        <rect key="frame" x="285" y="15" width="30" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron" translatesAutoresizingMaskIntoConstraints="NO" id="BSS-gc-8v3">
+                                        <rect key="frame" x="303" y="24" width="12" height="12"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="49f-sK-UOt"/>
-                                            <constraint firstAttribute="height" constant="30" id="mNW-CO-IyC"/>
+                                            <constraint firstAttribute="width" constant="12" id="49f-sK-UOt"/>
+                                            <constraint firstAttribute="height" constant="12" id="mNW-CO-IyC"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Role" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pnp-A6-bOg">
-                                        <rect key="frame" x="55" y="0.0" width="215" height="60"/>
+                                        <rect key="frame" x="55" y="0.0" width="233" height="60"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -5780,6 +5780,7 @@
         <image name="Visa" width="48" height="30"/>
         <image name="built_by" width="674" height="205"/>
         <image name="cal" width="75" height="75"/>
+        <image name="chevron" width="9.5" height="5"/>
         <image name="dummy" width="54" height="54"/>
         <image name="edit" width="66.5" height="66.5"/>
         <image name="edit_image_icon" width="85" height="85"/>
