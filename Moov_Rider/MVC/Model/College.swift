@@ -108,13 +108,13 @@ public class UserDetails: NSObject {
     var u_first_name : String!
     var u_image : String!
     var u_id : Int!
-    var wallet_balance : Int?
+    var wallet_balance : Double?
     
     func initWith(_ dictionary : NSDictionary)-> UserDetails {
         u_first_name = dictionary["u_first_name"] != nil ? dictionary["u_first_name"] as! String  : ""
         u_image = dictionary["u_image"] != nil ? dictionary["u_image"] as! String  : ""
         u_id = dictionary["u_id"] != nil ? dictionary["u_id"] as! Int  : 0
-        wallet_balance = dictionary["wallet_balance"] != nil ? dictionary["wallet_balance"] as! Int : 0
+        wallet_balance = dictionary["wallet_balance"] != nil ? dictionary["wallet_balance"] as! Double : 0
         return self
     }
     
