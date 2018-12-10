@@ -71,7 +71,8 @@ class EnterMobileNumberViewController: UIViewController, MICountryPickerDelegate
         paddingViewV.backgroundColor = UIColor.clear
         textFieldMobileNumber.leftView = paddingViewV
         
-        self.buttonNext.layer.cornerRadius = 10.0
+        self.buttonNext.layer.cornerRadius = 25.0
+        buttonNext.layer.masksToBounds = true
         self.textFieldMobileNumber.layer.borderColor = UIColor.lightGray.cgColor
         self.textFieldMobileNumber.layer.borderWidth =  1.0
         self.viewEnterMobileNumber.layer.borderColor = UIColor.lightGray.cgColor
@@ -132,20 +133,21 @@ class EnterMobileNumberViewController: UIViewController, MICountryPickerDelegate
     
     func registration()  {
         
-        var params  : NSDictionary?
-        var imageData = Data()
+        var params  = NSDictionary()
+//        var imageData = Data()
         let usertype = String(userRoleID!)
         let collegeId = String(collegeID!)
+        let deviceToken = appDelegate.deviceTokenStr != nil ? appDelegate.deviceTokenStr : ""
         if authProvider == "google"{
-             params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password":"", "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": authMode!,"auth_provider":authProvider!,"auth_uid":authUID!,"phone_country": self.textFieldCountryCode.text!, "image": imageUrl!,"device_type":"iOS","device_id":appDelegate.deviceTokenStr!,"push_token": appDelegate.deviceTokenStr!,"app_version":"1.2"]
-            imageData = self.imageData
+            params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password":"", "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": authMode!,"auth_provider":authProvider!,"auth_uid":authUID!,"phone_country": self.textFieldCountryCode.text!, "image": imageUrl!,"device_type":"iOS","device_id":deviceToken ?? "","push_token": deviceToken ?? "","app_version":"1.2"]
+//            imageData = self.imageData
         }else if authProvider == "facebook" {
-            params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password": password!, "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": authMode!,"auth_provider":authProvider!,"auth_uid":authUID!,"phone_country": self.textFieldCountryCode.text!, "image": imageUrl!,"device_type":"iOS","device_id":appDelegate.deviceTokenStr!,"push_token": appDelegate.deviceTokenStr!,"app_version":"1.2"]
+            params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password": password!, "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": authMode!,"auth_provider":authProvider!,"auth_uid":authUID!,"phone_country": self.textFieldCountryCode.text!, "image": imageUrl!,"device_type":"iOS","device_id":deviceToken ?? "","push_token": deviceToken ?? "","app_version":"1.2"]
         } else{
-            params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password": password!, "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": "email","auth_provider":"","auth_uid":"","phone_country": self.textFieldCountryCode.text!,"device_type":"iOS","device_id":appDelegate.deviceTokenStr!,"push_token": appDelegate.deviceTokenStr!,"app_version":"1.2"]
+            params = ["f_name": firstname!,"l_name": surName!, "email": emailID!, "password": password!, "college": collegeId,"phone": self.textFieldMobileNumber.text!, "gender": "", "user_type": usertype, "auth_mode": "email","auth_provider":"","auth_uid":"","phone_country": self.textFieldCountryCode.text!,"device_type":"iOS","device_id":deviceToken ?? "","push_token": deviceToken ?? "","app_version":"1.2"]
         }
         let hud = GenericFunctions.showJHud(target: self)
-            AlamofireSubclass.parseLinkUsingPostMethod("auth/register", with: params!, completion: { (success, response, error) in
+        AlamofireSubclass.parseLinkUsingPostMethod("auth/register", with: params, completion: { (success, response, error) in
             hud.hide()
             if success == true {
                 if response!["message"]as! String == "login success" {

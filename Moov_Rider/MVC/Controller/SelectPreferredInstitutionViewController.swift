@@ -83,7 +83,7 @@ class SelectPreferredInstitutionViewController: UIViewController, NIDropDownDele
             nidropDown.hide(sender)
             isDropDownOpen = false
         } else {
-            nidropDown.show(sender,120.0, arrayCollegeNameList as! [Any], nil, "down")
+            nidropDown.show(sender,150.0, arrayCollegeNameList as! [Any], nil, "down")
             //(sender, 120.0 , , nil, "down")
             isDropDownOpen = true
             nidropDown.isUserInteractionEnabled = true

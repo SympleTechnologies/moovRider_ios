@@ -36,6 +36,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, IndicatorInfoP
    // self.navigationController?.setNavigationBarHidden(true, animated: false)
         //viewUsernameTxtFld.setTopRoundedCorners()
        //viewPasswordTxtFld.setBottomRoundedCorners()
+        continueButton.layer.cornerRadius = 25.0
+        continueButton.layer.masksToBounds = true
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(keyboardHide))
         self.view.addGestureRecognizer(tapGesture)

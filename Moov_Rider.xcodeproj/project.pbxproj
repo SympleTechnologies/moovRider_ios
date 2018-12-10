@@ -96,6 +96,7 @@
 		2FFBC212210634B000A077D9 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFBC215210634B000A077D9 /* FBSDKLoginKit.framework */; };
 		37794D8F1624A79E15BDFEA4 /* Pods_Moov_Rider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3A43A1B53B6C877651E666 /* Pods_Moov_Rider.framework */; };
 		476F239A21BDA6BF00D65FD6 /* DropdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F239921BDA6BF00D65FD6 /* DropdownButton.swift */; };
+		476F239C21BE91E600D65FD6 /* launchimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 476F239B21BE91E600D65FD6 /* launchimage.png */; };
 		47738C3A21B9E232005834FD /* LoginRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47738C3921B9E232005834FD /* LoginRootViewController.swift */; };
 		477B029A21B57A8800D68225 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B029321B57A8700D68225 /* MFSideMenuContainerViewController.m */; };
 		477B029B21B57A8800D68225 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 477B029421B57A8700D68225 /* UIViewController+MFSideMenuAdditions.m */; };
@@ -247,6 +248,7 @@
 		2FFBC214210634B000A077D9 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFBC215210634B000A077D9 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		476F239921BDA6BF00D65FD6 /* DropdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
+		476F239B21BE91E600D65FD6 /* launchimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchimage.png; sourceTree = "<group>"; };
 		47738C3921B9E232005834FD /* LoginRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRootViewController.swift; sourceTree = "<group>"; };
 		477B029121B577DD00D68225 /* Moov_Rider-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Moov_Rider-Bridging-Header.h"; path = "Moov_Rider/Moov_Rider-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		477B029321B57A8700D68225 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
@@ -454,6 +456,7 @@
 				2F74151E20FDC58E00A0C94E /* LaunchScreen.storyboard */,
 				2FE11A0F21520B6A007F89F0 /* GoogleService-Info.plist */,
 				2F74152120FDC58E00A0C94E /* Info.plist */,
+				476F239B21BE91E600D65FD6 /* launchimage.png */,
 				2F74151920FDC58E00A0C94E /* Moov_Rider.xcdatamodeld */,
 			);
 			path = Moov_Rider;
@@ -756,6 +759,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476F239C21BE91E600D65FD6 /* launchimage.png in Resources */,
 				2F74152020FDC58E00A0C94E /* LaunchScreen.storyboard in Resources */,
 				2F74151D20FDC58E00A0C94E /* Assets.xcassets in Resources */,
 				2FE11A1021520B6B007F89F0 /* GoogleService-Info.plist in Resources */,
