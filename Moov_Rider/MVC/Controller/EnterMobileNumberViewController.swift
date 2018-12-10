@@ -77,14 +77,14 @@ class EnterMobileNumberViewController: UIViewController, MICountryPickerDelegate
         self.viewEnterMobileNumber.layer.borderColor = UIColor.lightGray.cgColor
         self.viewEnterMobileNumber.layer.borderWidth =  1.0
         
-        self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 10, width: self.view.frame.width, height: 50.0)
-        let btnMenu = UIButton(type: .custom)
-        btnMenu.setImage(#imageLiteral(resourceName: "Back_Button_3x"), for: .normal)
-        btnMenu.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        btnMenu.addTarget(self, action: #selector(sideMenuAction), for: .touchUpInside)
-        let item3 = UIBarButtonItem(customView: btnMenu)
-        self.navigationItem.setLeftBarButton(item3, animated: true)
-        
+//        self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 10, width: self.view.frame.width, height: 50.0)
+//        let btnMenu = UIButton(type: .custom)
+//        btnMenu.setImage(#imageLiteral(resourceName: "Back_Button_3x"), for: .normal)
+//        btnMenu.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+//        btnMenu.addTarget(self, action: #selector(sideMenuAction), for: .touchUpInside)
+//        let item3 = UIBarButtonItem(customView: btnMenu)
+//        self.navigationItem.setLeftBarButton(item3, animated: true)
+
         /*let logo = UIImage(named: "Let’s moov!")
          let imageViewLogo = UIImageView(image:logo)
          self.navigationItem.titleView = imageViewLogo*/
@@ -193,9 +193,9 @@ class EnterMobileNumberViewController: UIViewController, MICountryPickerDelegate
         
         return true
     }
-    @objc func sideMenuAction() {
-        self.navigationController?.popViewController(animated: true)
-    }
+//    @objc func sideMenuAction() {
+//        self.navigationController?.popViewController(animated: true)
+//    }
 
    
 
