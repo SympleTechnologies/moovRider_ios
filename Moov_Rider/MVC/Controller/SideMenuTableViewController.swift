@@ -27,29 +27,29 @@ class SideMenuTableViewController: UITableViewController, NIDropDownDelegate {
         
         
         
-        buttonProfileImage.layer.cornerRadius = 75.0
-        buttonProfileImage.layer.masksToBounds = true
-        imageViewProfile.layer.cornerRadius = 75.0
-        imageViewProfile.layer.masksToBounds = true
-        imageViewProfile.layer.borderColor = UIColor.red.cgColor
-        imageViewProfile.layer.borderWidth = 1.5
-        
-        imageViewProfile.layer.shadowRadius = 10
-        imageViewProfile.layer.shadowOpacity = 0.8
-        imageViewProfile.layer.shadowColor = UIColor.black.cgColor
-        imageViewProfile.layer.shadowOffset = CGSize.zero
-        
-        
-        imageViewProfile.generateOuterShadow()
-        
+//        buttonProfileImage.layer.cornerRadius = 75.0
+//        buttonProfileImage.layer.masksToBounds = true
+//        imageViewProfile.layer.cornerRadius = 75.0
+//        imageViewProfile.layer.masksToBounds = true
+//        imageViewProfile.layer.borderColor = UIColor.red.cgColor
+//        imageViewProfile.layer.borderWidth = 1.5
+//
+//        imageViewProfile.layer.shadowRadius = 10
+//        imageViewProfile.layer.shadowOpacity = 0.8
+//        imageViewProfile.layer.shadowColor = UIColor.black.cgColor
+//        imageViewProfile.layer.shadowOffset = CGSize.zero
+//
+//
+//        imageViewProfile.generateOuterShadow()
+//
         self.viewDetails()
         dropdownArr = ["Upcoming Rides","Previous Rides"]
         nidropDown.delegate = self
         self.labelusername.text = User.current.user_details?.u_first_name!
-//        let imageUrl = User.current.user_pic_url!
-//        self.imageViewProfile.sd_setImage(with: URL(string: imageUrl), placeholderImage: #imageLiteral(resourceName: "dummy") , options: SDWebImageOptions.highPriority) { (image, error, cache, url) in
-//            //
-//        }
+        let imageUrl = User.current.user_pic_url!
+        self.imageViewProfile.sd_setImage(with: URL(string: imageUrl), placeholderImage: #imageLiteral(resourceName: "dummy") , options: SDWebImageOptions.highPriority) { (image, error, cache, url) in
+            //
+        }
         NotificationCenter.default.addObserver(self, selector: #selector(reload), name: NSNotification.Name(rawValue: "updateProfile"), object: nil)
         
         
@@ -104,7 +104,7 @@ class SideMenuTableViewController: UITableViewController, NIDropDownDelegate {
     //MARK:- Table View Delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0{
-            let editProfileVC    = self.storyboard?.instantiateViewController(withIdentifier: "EditProfileTableViewController") as! EditProfileTableViewController
+            let editProfileVC    = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
             let navVC         = UINavigationController(rootViewController: editProfileVC)
             menuContainerViewController.centerViewController = navVC
             self.menuContainerViewController.menuState = MFSideMenuStateClosed

@@ -807,15 +807,15 @@ class EnterDestinationViewController: UIViewController, UITextFieldDelegate, Goo
                 {
                     print("reverse geodcode fail: \(error!.localizedDescription)")
                 }
-                let pm = placemarks! as [CLPlacemark]
+                guard let pm = placemarks else { return }
                 
                 if pm.count > 0 {
                     let pm = placemarks![0]
-                    print(pm.country!)
-                    print(pm.locality!)
-                    print(pm.subLocality!)
+//                    print(pm.country!)
+//                    print(pm.locality!)
+//                    print(pm.subLocality!)
                     //print(pm.thoroughfare!)
-                    print(pm.postalCode!)
+//                    print(pm.postalCode!)
                     //print(pm.subThoroughfare!)
                     var addressString : String = ""
                     if pm.subLocality != nil {

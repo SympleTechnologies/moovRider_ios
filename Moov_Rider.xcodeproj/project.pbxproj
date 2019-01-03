@@ -112,6 +112,8 @@
 		6E090C7521B536340084B246 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E090C7421B536340084B246 /* CosmosDistrib.swift */; };
 		6E67306A21B531E700F788FF /* PreviousRidesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67306921B531E700F788FF /* PreviousRidesTableViewCell.swift */; };
 		6E67306C21B5323F00F788FF /* PaymentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67306B21B5323F00F788FF /* PaymentListTableViewCell.swift */; };
+		B63456E021DCD49400C5C0D6 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63456DF21DCD49400C5C0D6 /* CircleImageView.swift */; };
+		B63456E321DCE0C200C5C0D6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63456E221DCE0C200C5C0D6 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -275,6 +277,8 @@
 		6E67306921B531E700F788FF /* PreviousRidesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRidesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		6E67306B21B5323F00F788FF /* PaymentListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		82BCE26623F89F9FBD4FA996 /* Pods-Moov_Rider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moov_Rider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moov_Rider/Pods-Moov_Rider.debug.xcconfig"; sourceTree = "<group>"; };
+		B63456DF21DCD49400C5C0D6 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		B63456E221DCE0C200C5C0D6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD3A43A1B53B6C877651E666 /* Pods_Moov_Rider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moov_Rider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -446,6 +450,7 @@
 		2F74151120FDC58E00A0C94E /* Moov_Rider */ = {
 			isa = PBXGroup;
 			children = (
+				B63456DE21DCD47100C5C0D6 /* Extensions */,
 				2F9DDB342102FFFA000AA30C /* Moov_Rider.entitlements */,
 				477B029121B577DD00D68225 /* Moov_Rider-Bridging-Header.h */,
 				2F23E29620FE047900487BA5 /* External */,
@@ -475,6 +480,7 @@
 		2F74152820FDC61A00A0C94E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B63456E121DCE0A400C5C0D6 /* Profile */,
 				2F370F7A212C101F005E3AA3 /* Login */,
 				2F0BAB36210355E600723485 /* ViewController.swift */,
 				2F37222A21006B0F0002ADBF /* Cell */,
@@ -687,6 +693,22 @@
 			path = UIViewExtension;
 			sourceTree = "<group>";
 		};
+		B63456DE21DCD47100C5C0D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B63456DF21DCD49400C5C0D6 /* CircleImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B63456E121DCE0A400C5C0D6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B63456E221DCE0C200C5C0D6 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -724,7 +746,7 @@
 					2F74150E20FDC58E00A0C94E = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -896,6 +918,7 @@
 				2F9F54302100C7DD00310AE9 /* UIView+JHUD.h in Sources */,
 				2F9F54312100C7DD00310AE9 /* UIView+JHUD.m in Sources */,
 				2F37222F210083730002ADBF /* ResetPasswordView.swift in Sources */,
+				B63456E321DCE0C200C5C0D6 /* ProfileViewController.swift in Sources */,
 				2FE11A2321520E50007F89F0 /* GeoFire.m in Sources */,
 				2F372230210083730002ADBF /* ResetDetailsViewController.swift in Sources */,
 				2FE5604821462EDA00156896 /* WalletToBankTableViewController.swift in Sources */,
@@ -933,6 +956,7 @@
 				2FE5604C21467ADC00156896 /* TalkToUsTableViewController.swift in Sources */,
 				2F15DC512142789D000FAF4C /* WalletToBankViewController.swift in Sources */,
 				2F37222521004C700002ADBF /* MyWalletViewController.swift in Sources */,
+				B63456E021DCD49400C5C0D6 /* CircleImageView.swift in Sources */,
 				2F1701292103886B00AE3A90 /* PreviousRidesViewController.swift in Sources */,
 				2FBFB3B22148DE24001FD344 /* SwiftyInnerShadowLayer.swift in Sources */,
 				2F74151320FDC58E00A0C94E /* AppDelegate.swift in Sources */,
@@ -1089,8 +1113,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Moov_Rider/Moov_Rider.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 23D9P95352;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H7YYU92G2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/GoogleMaps/Maps/Frameworks",
@@ -1104,10 +1128,10 @@
 					"-fobjc-arc",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sics.Moov-Rider";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muna.Moov-Rider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0cc7f70e-9f8c-425f-be6e-c3f2da464c9a";
-				PROVISIONING_PROFILE_SPECIFIER = "DevelopmentProvisioningProfileForMoovRiderJun'18";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Moov_Rider/Moov_Rider-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -1125,8 +1149,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Moov_Rider/Moov_Rider.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 23D9P95352;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H7YYU92G2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/GoogleMaps/Maps/Frameworks",
@@ -1140,10 +1164,10 @@
 					"-fobjc-arc",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sics.Moov-Rider";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.muna.Moov-Rider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0cc7f70e-9f8c-425f-be6e-c3f2da464c9a";
-				PROVISIONING_PROFILE_SPECIFIER = "DevelopmentProvisioningProfileForMoovRiderJun'18";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Moov_Rider/Moov_Rider-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
