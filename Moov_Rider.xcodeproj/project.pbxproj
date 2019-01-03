@@ -279,6 +279,7 @@
 		82BCE26623F89F9FBD4FA996 /* Pods-Moov_Rider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moov_Rider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moov_Rider/Pods-Moov_Rider.debug.xcconfig"; sourceTree = "<group>"; };
 		B63456DF21DCD49400C5C0D6 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		B63456E221DCE0C200C5C0D6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B63456E521DE648A00C5C0D6 /* uniquify_projects.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = uniquify_projects.sh; sourceTree = "<group>"; };
 		CD3A43A1B53B6C877651E666 /* Pods_Moov_Rider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moov_Rider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -428,6 +429,7 @@
 		2F74150620FDC58E00A0C94E = {
 			isa = PBXGroup;
 			children = (
+				B63456E421DE644500C5C0D6 /* Scripts */,
 				2F56F8B12101D9AA008F099F /* GooglePlaces.framework */,
 				2F56F8AE2101D99C008F099F /* GooglePlacePicker.framework */,
 				2F56F8A82101D97D008F099F /* GoogleMaps.framework */,
@@ -707,6 +709,14 @@
 				B63456E221DCE0C200C5C0D6 /* ProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		B63456E421DE644500C5C0D6 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				B63456E521DE648A00C5C0D6 /* uniquify_projects.sh */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
