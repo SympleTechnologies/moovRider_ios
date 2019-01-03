@@ -1124,7 +1124,7 @@
 				CODE_SIGN_ENTITLEMENTS = Moov_Rider/Moov_Rider.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4H7YYU92G2;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/GoogleMaps/Maps/Frameworks",
@@ -1138,7 +1138,7 @@
 					"-fobjc-arc",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.muna.Moov-Rider";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sics.Moov-Rider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1160,7 +1160,7 @@
 				CODE_SIGN_ENTITLEMENTS = Moov_Rider/Moov_Rider.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4H7YYU92G2;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/GoogleMaps/Maps/Frameworks",
@@ -1174,7 +1174,7 @@
 					"-fobjc-arc",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.muna.Moov-Rider";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sics.Moov-Rider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
